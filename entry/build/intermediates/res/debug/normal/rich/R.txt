@@ -1,0 +1,5 @@
+media icon 0x1000003
+media myicon 0x1000004
+string appName 0x1000000
+string entry_MainAbility 0x1000001
+string mainability_description 0x1000002

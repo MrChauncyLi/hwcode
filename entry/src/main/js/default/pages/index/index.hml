@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="content">
+        <div class="one">
+            <text class=""> {{ $t('title.one') }} </text>
+        </div>
+        <div class="input">
+            <input @change="keywordchange" type="text" value="{{ keyword }}"/>
+        </div>
+        <div class="btn">
+            <input type="button" onclick="getAIpoem" value="{{ $t('btn.one') }}"/>
+        </div>
+        <div style="margin-top:10px;height:2px;width:100%;background-color:#cdcdcd;"></div>
+        <div class="one">
+            <text class=""> {{ $t('title.two') }} </text>
+        </div>
+        <div class="input">
+            <input @change="keywordpromchange" type="text" value="{{ keywordpoem }}"/>
+        </div>
+        <div class="btn">
+            <input type="button" onclick="getpoem" value="{{ $t('btn.two') }}"/>
+        </div>
+    </div>
+</div>

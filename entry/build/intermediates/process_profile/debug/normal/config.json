@@ -1,0 +1,82 @@
+{
+    "app": {
+        "apiVersion": {
+            "compatible": 6,
+            "releaseType": "Release",
+            "target": 6
+        },
+        "vendor": "example",
+        "bundleName": "com.nanchang.myapplication",
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {
+        "default": {
+            "debug": true
+        }
+    },
+    "module": {
+        "deviceType": [
+            "phone",
+            "tablet",
+            "tv",
+            "wearable"
+        ],
+        "abilities": [
+            {
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "visible": true,
+                "name": "com.nanchang.myapplication.MainAbility",
+                "icon": "$media:myicon",
+                "description": "$string:mainability_description",
+                "label": "$string:appName",
+                "type": "page",
+                "launchType": "standard",
+                "homeAbility": true
+            }
+        ],
+        "mainAbility": "com.nanchang.myapplication.MainAbility",
+        "distro": {
+            "moduleType": "entry",
+            "installationFree": false,
+            "deliveryWithInstall": true,
+            "moduleName": "entry"
+        },
+        "package": "com.nanchang.myapplication",
+        "name": ".MyApplication",
+        "js": [
+            {
+                "pages": [
+                    "pages/index/index"
+                ],
+                "name": "default",
+                "window": {
+                    "designWidth": 720,
+                    "autoDesignWidth": true
+                }
+            }
+        ],
+        "reqPermissions": [
+            {
+                "name": "ohos.permission.INTERNET"
+            },
+            {
+                "name": "ohos.permission.GET_NETWORK_INFO"
+            },
+            {
+                "name": "ohos.permission.SET_NETWORK_INFO"
+            }
+        ]
+    }
+}

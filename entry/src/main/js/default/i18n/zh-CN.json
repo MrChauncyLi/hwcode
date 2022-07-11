@@ -1,0 +1,17 @@
+{
+  "strings": {
+    "keyword": "我爱祖国",
+    "keywordpoem": "我心永恒终不悔"
+  },
+  "title": {
+    "one": "藏头诗",
+    "two": "输入第一句诗"
+  },
+  "placeholder": {
+    "one": "我爱祖国"
+  },
+  "btn": {
+    "one": "AI生成藏头诗",
+    "two": "AI生成藏首诗"
+  }
+}

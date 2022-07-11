@@ -1,0 +1,53 @@
+{
+    "summary": {
+        "app": {
+            "bundleName": "com.nanchang.myapplication",
+            "version": {
+                "code": 1000000,
+                "name": "1.0.0"
+            }
+        },
+        "modules": [
+            {
+                "mainAbility": "com.nanchang.myapplication.MainAbility",
+                "deviceType": [
+                    "phone",
+                    "tablet",
+                    "tv",
+                    "wearable"
+                ],
+                "abilities": [
+                    {
+                        "visible": true,
+                        "name": "com.nanchang.myapplication.MainAbility",
+                        "label": "$string:appName"
+                    }
+                ],
+                "distro": {
+                    "moduleType": "entry",
+                    "installationFree": false,
+                    "deliveryWithInstall": true,
+                    "moduleName": "entry"
+                },
+                "apiVersion": {
+                    "compatible": 6,
+                    "releaseType": "Release",
+                    "target": 6
+                }
+            }
+        ]
+    },
+    "packages": [
+        {
+            "deviceType": [
+                "phone",
+                "tablet",
+                "tv",
+                "wearable"
+            ],
+            "moduleType": "entry",
+            "deliveryWithInstall": true,
+            "name": "entry-debug-rich-unsigned"
+        }
+    ]
+}
